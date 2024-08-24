@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         id="WebApp_ID" version="3.1">
+
+
+  <display-name>My E-Application</display-name>
+  
+    <servlet>
+	    <servlet-name>Products</servlet-name>
+	    <servlet-class>com.srijan.eapp.controller.ProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>Products</servlet-name>
+	    <url-pattern>/list_products</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	    <servlet-name>Products</servlet-name>
+	    <url-pattern>/checkout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	    <servlet-name>Products</servlet-name>
+	    <url-pattern>/order</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	    <servlet-name>Products</servlet-name>
+	    <url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	    <servlet-name>Products</servlet-name>
+	    <url-pattern>/cancel</url-pattern>
+	</servlet-mapping>
+	
+	<error-page>
+	    <exception-type>java.lang.Exception</exception-type>
+	    <location>/error.jsp</location>
+	</error-page>
+
+	<welcome-file-list>
+	    <welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+  
+</web-app>
